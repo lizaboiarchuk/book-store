@@ -4,10 +4,16 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     height: 100%;
+    text-decoration: none;
+}
+
+.card a {
+    text-decoration: none;
 }
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    text-decoration: none;
 }
 
 .card-title {
@@ -35,4 +41,29 @@
     font-size: 20px;
     font-weight: 600;
     color: #333;
+}
+
+.row {
+    margin-bottom: 1rem;
+}
+
+/* Add margin between columns */
+.col-sm-6, .col-md-4, .col-lg-3 {
+    margin-bottom: 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 1rem;
+}
+
+
+.link-class {
+    text-decoration: none;
+}
+
+.link-class:hover {
+    text-decoration: none;
 }
