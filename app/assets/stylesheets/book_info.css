@@ -84,7 +84,7 @@ body {
     object-fit: contain;
 }
 
-.btn-buy {
+.btn-buy-now {
     display: inline-block;
     padding: 1rem;
     border-radius: 8px;
@@ -97,6 +97,6 @@ body {
     text-decoration: none;
 }
 
-.btn-buy:hover {
+.btn-buy-now:hover {
     background-color: #6c49d9;
 }

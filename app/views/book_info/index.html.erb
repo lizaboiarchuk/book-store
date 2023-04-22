@@ -24,7 +24,7 @@
         </div>
       </div>
       <p class="book-price"> <%= number_to_currency(@book.Price) %></p>
-      <a href="#" class="btn-buy">Buy Now</a>
+      <%= link_to 'Buy Now', new_purchase_path(book_id: @book.id), class: 'btn-buy-now' %>
     </div>
   </div>
 </div>

@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   resources :library do
     resources :book_info, only: [:show]
   end
+
+  resources :purchases, only: [:new, :create]
   # Defines the root path route ("/")
   # root "articles#index"
 end
