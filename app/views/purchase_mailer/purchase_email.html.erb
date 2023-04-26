@@ -1,0 +1,11 @@
+<h2>Order received!</h2>
+<p>Thank you for purchasing <%= @book.Title %> for <%= number_to_currency(@book.Price) %>.</p>
+<p>Your order details:</p>
+<ul>
+  <li>Name: <%= @purchase.name %></li>
+  <li>Surname: <%= @purchase.surname %></li>
+  <li>Email: <%= @purchase.email %></li>
+  <li>Country: <%= @purchase.country %></li>
+  <li>City: <%= @purchase.city %></li>
+  <li>Address: <%= @purchase.address %></li>
+</ul>
