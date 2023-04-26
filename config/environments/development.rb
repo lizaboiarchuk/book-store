@@ -41,21 +41,14 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
   config.action_mailer.delivery_method = :smtp
-  # config.action_mailer.smtp_settings = {
-  #   address: 'smtp.gmail.com',
-  #   port: 587,
-  #   domain: 'gmail.com',
-  #   user_name: 'bookappspurchase@gmail.com',
-  #   password: 'Bookappspurchase123!!!',
-  #   enable_starttls_auto: true
-  # }
+
   config.action_mailer.smtp_settings = {
     :address => 'smtp.sendgrid.net',
     :port => '587',
     :domain => 'bookappspurchase@gmail.com',
     :authentication => :plain,
     :user_name => 'apikey',
-    :password => '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',
+    :password => '',
     :enable_starttls_auto => true
   }
   config.action_mailer.default_url_options = { host: "localhost", port: 3000 }

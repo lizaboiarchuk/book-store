@@ -12,8 +12,7 @@ class PurchasesController < ApplicationController
     respond_to do |format|
       if @purchase.valid?
 
-        PurchaseMailer.purchase_email(@book, @purchase).deliver_now
-        # SendPurchaseEmailJob.perform_later(@book, @purchase)
+        SendPurchaseEmailJob.perform_now(@book, @purchase.to_hash)
 
         format.turbo_stream do
           render turbo_stream: turbo_stream.replace('purchase_form', partial: 'success', locals: { book: @book })
@@ -25,9 +24,6 @@ class PurchasesController < ApplicationController
       end
     end
   end
-
-
-
 
   def purchase_params
     params.require(:purchase).permit(:book_name, :book_price, :name, :surname, :email, :country, :city, :address)
