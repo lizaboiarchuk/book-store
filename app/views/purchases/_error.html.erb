@@ -1,0 +1,10 @@
+<!-- app/views/purchases/_error.html.erb -->
+<div id="purchase_form">
+  <h3>There were errors in your submission:</h3>
+  <ul>
+    <% @purchase.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+  <!-- You can include the original form here to allow users to correct their mistakes -->
+</div>

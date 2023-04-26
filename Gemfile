@@ -44,6 +44,9 @@ gem "bootsnap", require: false
 gem 'mongoid', '~> 7.3'
 gem "hotwire-rails"
 gem "turbo-rails"
+gem 'sendgrid-ruby'
+gem 'sidekiq'
+gem 'redis'
 
 # Use Sass to process CSS
 # gem "sassc-rails"

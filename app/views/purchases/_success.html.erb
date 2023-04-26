@@ -1,4 +1,6 @@
 <div class="alert alert-success" role="alert">
-  <p>Order received!</p>
+  <p>Order received for <%= @book.Title %> at $<%= @book.Price %>.</p>
   <%= link_to 'Back to library', library_index_path, class: 'btn btn-primary' %>
 </div>
+
+
